@@ -1,0 +1,11 @@
+DOMAIN = "gl865t"
+DEFAULT_NAME = "Telit GL865 GSM Gateway"
+
+CONF_PORT = "port"
+CONF_BAUDRATE = "baudrate"
+
+DEFAULT_PORT = "/dev/ttyUSB0"
+DEFAULT_BAUDRATE = 115200
+DEFAULT_SCAN_INTERVAL = 20
+
+EVENT_NEW_SMS = "gl865t_new_sms_received"
