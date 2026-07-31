@@ -1,7 +1,7 @@
 {
   "domain": "gl865t",
   "name": "Telit GL865 GSM Gateway",
-  "codeowners": ["@uxesutr"],
+  "codeowners": ["@xesutr"],
   "config_flow": true,
   "documentation": "https://github.com/xesutr/home-assistant-sms-modem",
   "iot_class": "local_polling",
