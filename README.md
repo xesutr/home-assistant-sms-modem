@@ -1,9 +1,10 @@
 # Telit GL865T-DUAL GSM/GPRS modem integration for Home Assistant
-Home Assistant component for Telit GL865 GSM/GPRS modem administration with sensors, list, delete, receive and send SMS. Make call.
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/default)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/yourusername/ha-telit-gsm)
-![GitHub activity](https://img.shields.io/github/commit-activity/m/yourusername/ha-telit-gsm)
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/xestr/home-assistant-sms-modem)
+![GitHub activity](https://img.shields.io/github/commit-activity/m/xesutr/home-assistant-sms-modem)
+
+Home Assistant component for Telit GL865 GSM/GPRS modem administration with sensors, list, delete, receive and send SMS. Make call.
 
 Custom Home Assistant integration for **Telit GSM Modules** (e.g., GL865-DUAL, GL865T) connected via Serial USB. 
 
