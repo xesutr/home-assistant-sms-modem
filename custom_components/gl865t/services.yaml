@@ -1,0 +1,41 @@
+send_sms:
+  name: Send SMS
+  description: Sends an SMS message to specified target numbers or to the default contact list via the GSM module.
+  fields:
+    target:
+      name: Target Number
+      description: "Phone number(s) to send the SMS to (single or comma-separated). If left empty, the helper list is used."
+      required: false
+      selector:
+        text:
+          multiline: false
+    message:
+      name: Message
+      description: "The text content of the SMS to send."
+      required: true
+      selector:
+        text:
+          multiline: true
+
+make_call:
+  name: Make Voice Call
+  description: "Dials the specified phone number and hangs up automatically after the set duration."
+  fields:
+    target:
+      name: Phone Number
+      description: "Target phone number to call (e.g., 05xxxxxxxxx)."
+      required: true
+      example: "05321234567"
+      selector:
+        text:
+    duration:
+      name: Call Duration (Seconds)
+      description: "Determines how many seconds the phone will ring before hanging up."
+      required: false
+      default: 10
+      example: 10
+      selector:
+        number:
+          min: 3
+          max: 30
+          unit_of_measurement: "s"
