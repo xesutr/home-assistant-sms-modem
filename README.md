@@ -36,7 +36,7 @@ It allows you to receive SMS messages, store them in a local SQLite database, se
 
 ### Method 2: Manual Installation
 
-1. Copy the `custom_components/telit_gsm` directory into your Home Assistant's `config/custom_components/` directory.
+1. Copy the `custom_components/gl865t` directory into your Home Assistant's `config/custom_components/` directory.
 2. Restart Home Assistant.
 
 ---
@@ -47,7 +47,7 @@ It allows you to receive SMS messages, store them in a local SQLite database, se
 2. Click **Add Integration** in the bottom right.
 3. Search for **Telit GSM** and select it.
 4. Fill in the setup parameters:
-   * **Serial Port**: e.g., `/dev/ttyUSB0` or `/dev/serial/by-id/...`
+   * **Serial Port**: e.g., `/dev/ttyUSB0`
    * **Baud Rate**: Default is `115200`
    * **Scan Interval**: Update polling frequency in seconds (Default: `20`)
 
