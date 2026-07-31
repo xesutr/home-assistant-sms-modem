@@ -57,7 +57,7 @@ It allows you to receive SMS messages, store them in a local SQLite database, se
 
 This integration exposes the following actions/services:
 
-### `telit_gsm.send_sms`
+### `gl865t.send_sms`
 Sends an SMS message to specified target numbers or to the default contact list.
 
 | Field | Type | Required | Description |
@@ -65,7 +65,7 @@ Sends an SMS message to specified target numbers or to the default contact list.
 | `target` | String | No | Phone number(s) to send the SMS to (single or comma-separated). If omitted, fallback helper `input_text.sms_bildirim_listesi` is used. |
 | `message` | String | **Yes** | The text content of the SMS. |
 
-### `telit_gsm.make_call`
+### `gl865t.make_call`
 Dials the target phone number and automatically hangs up after the specified duration.
 
 | Field | Type | Required | Description |
@@ -73,7 +73,7 @@ Dials the target phone number and automatically hangs up after the specified dur
 | `target` | String | **Yes** | Target phone number to call (e.g., `05321234567`). |
 | `duration` | Integer | No | How many seconds the phone will ring before hanging up (Default: `10`, Range: `3-30`). |
 
-### `telit_gsm.delete_sms`
+### `gl865t.delete_sms`
 Deletes an SMS record from the SQLite database and RAM memory.
 
 | Field | Type | Required | Description |
@@ -84,17 +84,3 @@ Deletes an SMS record from the SQLite database and RAM memory.
 
 ---
 
-## Automations Example
-
-### Trigger on New SMS Arrival
-
-```yaml
-alias: "Notify on Incoming SMS"
-trigger:
-  - platform: event
-    event_type: telit_gsm_new_sms
-action:
-  - service: notify.persistent_notification
-    data:
-      title: "New SMS from {{ trigger.event.data.sender }}"
-      message: "{{ trigger.event.data.content }}"
